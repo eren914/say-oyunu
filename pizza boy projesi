@@ -1,0 +1,22 @@
+boy = input("Boy seç (s / m / l): ")
+peporoni = input("Pepperoni ister misin? (y/n): ")
+extra_cheese = input("Extra cheese ister misin? (y/n): ")
+
+eren = 0
+
+if boy == 's':
+    eren += 15
+elif boy == 'm':
+    eren += 10
+elif boy == 'l':
+    eren += 20
+else:
+    print("yanlış girdiniz")
+
+if peporoni == 'y':
+    eren += 15
+
+if extra_cheese == 'y':
+    eren += 1
+
+print(f"ödeyeceğiniz toplam fatura {eren} TL")
