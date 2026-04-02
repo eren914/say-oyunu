@@ -1,0 +1,26 @@
+import random
+
+sifre1 = ['a','b','c','d','e','f']
+sifre2 = ['1','2','3','4','5','6']
+sifre3 = ['i','Q','$']
+
+print('hoşgeldiniz')
+
+esifre1 = int(input('şifreniz kaç harf olsun: '))
+eren = int(input('kaç sembol kullanılsın: '))
+duru = int(input('kaç sayı olsun: '))
+
+password =[]
+
+for nazı in range(esifre1):
+    password += random.choice(sifre1)
+
+for nazı in range(eren):
+    password += random.choice(sifre3)
+
+for nazı in range(duru):
+    password += random.choice(sifre2)
+
+print(password)
+print(random.shuffle(password))
+print(password)
